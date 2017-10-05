@@ -7,5 +7,3 @@ Panel
 1. Display with imgix.
 2. Thumbnail view? Auto refresh?
 3. Delete / expire?
-
-
