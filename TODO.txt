@@ -1,3 +1,11 @@
-1. Add upload to S3 feature.
-2. Resize and display with imgix.
-3. Thumbnail view? Auto refresh?
+Uploader
+
+1. Add upload to S3 feature - http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/configuring-the-jssdk.html
+    - Should be able to do this client-side only.
+
+Panel
+1. Display with imgix.
+2. Thumbnail view? Auto refresh?
+3. Delete / expire?
+
+
