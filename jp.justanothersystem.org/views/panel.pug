@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title Julia's Photoshop Panel
+        meta(name='author' content='Jeffrey Alan Scudder')
+        //meta(name='description' content="")
+        link(rel='icon' href='/images/favicon.png')
+        //meta(property='og:title' content='')
+        //meta(property='og:url' content='')
+        //meta(property='og:image' content='')
+        if process.env.NODE_ENV === 'production'
+            link(rel='stylesheet' href='/dist/style.css')
+    body
+        h1 Julia's Photoshop Panel
+        block scripts
+            script(src="/dist/admin.bundle.js")

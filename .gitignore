@@ -1,0 +1,16 @@
+# Ignore IntelliJ IDEA's files
+.idea
+*.iml
+
+# Ignore node dependency and webpack build files
+node_modules
+jp.justanothersystem.org/public/dist
+
+# Ignore dotenv files
+.env*
+
+# Ignore macOS Finder files
+.DS_Store
+
+# Ignore VIM's swap files
+*.swp
