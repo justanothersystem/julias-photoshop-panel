@@ -2,6 +2,11 @@
   "name": "julias-photoshop-panel",
   "version": "1.0.0",
   "description": "A web app and Photoshop panel that allows audience members to upload expiring images for Julia to work with.",
+  "private": true,
+  "now": {
+    "dotenv": ".env.now",
+    "alias": ["jp.justanothersystem.org"]
+  },
   "scripts": {
     "start": "NODE_ENV=production node jp.justanothersystem.org/index.js",
     "build": "NODE_ENV=production webpack --config jp.justanothersystem.org/webpack.config.babel.js --define process.env.NODE_ENV=\"production\" --progress --colors",
