@@ -17,5 +17,8 @@ body {
 #images {
   img {
     width: 100%;
+    image-rendering: pixelated;
+    border-radius: 20px;
+    padding: 10px;
   }
 }

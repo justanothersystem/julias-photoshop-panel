@@ -32,7 +32,8 @@ s3.listObjects({
     })
 
     const urls = images.map((key) => {
-      return `https://s3.amazonaws.com/${bucketName}/${key}`
+      // return `https://s3.amazonaws.com/${bucketName}/${key}`
+      return `https://justanothersystem.imgix.net/${key}?w=128`
     })
 
     console.log(urls)
