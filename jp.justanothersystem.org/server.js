@@ -16,6 +16,22 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 // routes
 app.get('/', (req, res) => {
+  // Calculate Amazon Web Services post policy.
+
+  /*
+  const expirationDate = new Date()
+  expirationDate.setUTCDate(expirationDate.getUTCDate() + 1)
+
+  const postPolicy = {
+    'expiration': expirationDate.toISOString(),
+    'conditions': [
+      {'acl': 'public-read'},
+      {'bucket': 'johnsmith'},
+      ['starts-with', '$key', 'user/eric/']
+    ]
+  }
+  */
+
   res.render('upload')
 })
 

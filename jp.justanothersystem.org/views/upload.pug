@@ -2,6 +2,7 @@ doctype html
 html
     head
         title Julia's Photoshop Panel - Upload
+        meta(charset='utf-8')
         meta(name='author' content='Jeffrey Alan Scudder')
         //meta(name='description' content="")
         link(rel='icon' href='/images/favicon.png')
@@ -11,6 +12,10 @@ html
         if process.env.NODE_ENV === 'production'
             link(rel='stylesheet' href='/dist/style.css')
     body
-        h1 Julia's Photoshop Panel Uploader
+        canvas(id="progress")
+        div(id="form")
+            input(type="file" id="file" name="file" accept="image/*")
+            button(id="upload") Upload
         block scripts
+            script(src="https://sdk.amazonaws.com/js/aws-sdk-2.130.0.min.js")
             script(src="/dist/upload.bundle.js")

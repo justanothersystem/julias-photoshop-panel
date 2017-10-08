@@ -7,3 +7,11 @@ Panel
 1. Display with imgix.
 2. Thumbnail view? Auto refresh?
 3. Delete / expire?
+
+
+Flow
+
+X A. Upload to S3 with POST request form.
+    - With Progress Bar: https://stackoverflow.com/questions/76976/how-to-get-progress-from-xmlhttprequest
+B. Use LIST from AWS SDK on the server to get all Objects.
+C. Use Object names to generate imgix tags.

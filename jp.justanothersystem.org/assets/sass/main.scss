@@ -1,3 +1,21 @@
 body {
   background-color: yellow;
+  margin: 0;
+}
+
+#progress {
+  width: 100vw;
+  height: 4vw;
+  image-rendering: pixelated;
+}
+
+#form {
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+#images {
+  img {
+    width: 100%;
+  }
 }
