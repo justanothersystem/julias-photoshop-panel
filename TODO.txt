@@ -1,17 +1,14 @@
-Uploader
-
-1. Add upload to S3 feature - http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/configuring-the-jssdk.html
-    - Should be able to do this client-side only.
+1. Make favicon for website. (One, or two?)
+2. Come up with subdomain.justanothersystem.org
+3. Think of a title for the tab.
+4. One sentence description.
 
 Panel
-1. Display with imgix.
-2. Thumbnail view? Auto refresh?
-3. Delete / expire?
 
+1. Fix the image letterboxing.
 
-Flow
+Uploader
 
-X A. Upload to S3 with POST request form.
-    - With Progress Bar: https://stackoverflow.com/questions/76976/how-to-get-progress-from-xmlhttprequest
-B. Use LIST from AWS SDK on the server to get all Objects.
-C. Use Object names to generate imgix tags.
+1. Select image (by clicking on blank checkerboard pattern or dragging an image in.
+2. Use image data to draw an uploading progress bar from bottom to top.
+3. Reload the page once image has been upload.

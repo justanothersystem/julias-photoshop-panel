@@ -1,6 +1,16 @@
+html {
+  background-color: black;
+}
+
 body {
-  background-color: yellow;
+  background-image: url('/images/background.png');
+  display: flex;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
+  &.inactive {
+    opacity: 0.9;
+  }
 }
 
 #progress {
@@ -14,11 +24,30 @@ body {
   margin-top: 1em;
 }
 
-#images {
-  img {
-    width: 100%;
-    image-rendering: pixelated;
-    border-radius: 20px;
-    padding: 10px;
+#image {
+  margin: auto;
+  width: 100vh;
+  user-select: none;
+  cursor: grab;
+}
+
+#image:active {
+  cursor: grabbing;
+}
+
+#image:hover {
+  filter: grayscale(0.0);
+}
+
+#image.active {
+  opacity: 0.75;
+}
+
+
+@media all and (orientation: portrait) {
+
+  #image {
+    width: 100vw;
   }
+
 }
