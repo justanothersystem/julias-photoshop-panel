@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/justanothersystem/julias-photoshop-panel.git"
+    "url": "git+https://github.com/justanothersystem/peter.git"
   },
   "author": "Jeffrey Alan Scudder <me@jas.life>",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/justanothersystem/julias-photoshop-panel/issues"
+    "url": "https://github.com/justanothersystem/peter/issues"
   },
-  "homepage": "https://github.com/justanothersystem/julias-photoshop-panel#readme",
+  "homepage": "https://github.com/justanothersystem/peter#readme",
   "dependencies": {
     "babel-register": "^6.26.0",
     "compression": "^1.7.1",
