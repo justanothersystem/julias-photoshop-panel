@@ -4,7 +4,7 @@
 
 # Ignore node dependency and webpack build files
 node_modules
-jp.justanothersystem.org/public/dist
+peter.justanothersystem.org/public/dist
 
 # Ignore dotenv files
 .env*

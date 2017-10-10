@@ -1,0 +1,24 @@
+doctype html
+html
+    head
+        title Peter Panel
+        meta(charset='utf-8')
+        meta(name='author' content='Jeffrey Alan Scudder, Julia Yerger')
+        meta(name='description' content='Take pictures from Peter, one picture at a time.')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(property='og:title' content='Peter')
+        meta(property='og:url' content='https://peter.justanothersystem.org')
+        meta(property='og:image' content='https://peter.justanothersystem.org/images/peter_og_image.png')
+        meta(property='og:image:width' content='1200')
+        meta(property='og:image:height' content='630')
+        meta(name='apple-mobile-web-app-capable' content='yes')
+        meta(name='apple-mobile-web-app-status-bar-style' content='black-translucent')
+        meta(name='apple-mobile-web-app-title' content='Peter')
+        link(rel='apple-touch-icon' href='/images/peter_app_icon.png')
+        link(rel='icon' href='/images/favicon.png')
+        if process.env.NODE_ENV === 'production'
+            link(rel='stylesheet' href='/dist/style.css')
+    body
+        block scripts
+            script(src="https://sdk.amazonaws.com/js/aws-sdk-2.130.0.min.js")
+            script(src="/dist/admin.bundle.js")

@@ -39,8 +39,8 @@ const styles = {
 
 const config = {
   entry: {
-    upload: ['./jp.justanothersystem.org/assets/js/upload.js'],
-    admin: ['./jp.justanothersystem.org/assets/js/panel.js']
+    upload: ['./peter.justanothersystem.org/assets/js/upload.js'],
+    admin: ['./peter.justanothersystem.org/assets/js/panel.js']
   },
   devtool: 'source-map',
   output: {

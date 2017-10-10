@@ -1,14 +1,3 @@
-1. Make favicon for website. (One, or two?)
-2. Come up with subdomain.justanothersystem.org
-3. Think of a title for the tab.
-4. One sentence description.
-
-Panel
-
-1. Fix the image letterboxing.
-
-Uploader
-
-1. Select image (by clicking on blank checkerboard pattern or dragging an image in.
-2. Use image data to draw an uploading progress bar from bottom to top.
-3. Reload the page once image has been upload.
+1. Add resume-able downloads after laptop sleep. Right now it cancels.
+2. Limit max image filesize to 1gb.
+3. Build customized SDK: https://sdk.amazonaws.com/builder/js/

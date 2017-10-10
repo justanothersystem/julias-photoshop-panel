@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <ExtensionManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ExtensionBundleId="com.adobe.CEPHTMLTEST" ExtensionBundleVersion="1.0" Version="6.0"> <!-- MAJOR-VERSION-UPDATE-MARKER -->
     <ExtensionList>
-        <Extension Id="org.justanothersystem.julias-panel" Version="1.0.0"/>
+        <Extension Id="org.justanothersystem.peter-panel" Version="1.0.0"/>
     </ExtensionList>
     <ExecutionEnvironment>
         <HostList>
@@ -16,7 +16,7 @@
         </RequiredRuntimeList>
     </ExecutionEnvironment>
     <DispatchInfoList>
-        <Extension Id="org.justanothersystem.julias-panel">
+        <Extension Id="org.justanothersystem.peter-panel">
             <DispatchInfo>
                 <Resources>
                     <MainPath>./html/index.html</MainPath>
@@ -30,7 +30,7 @@
                 </Lifecycle>
                 <UI>
                     <Type>Panel</Type>
-                    <Menu>Julia's Panel</Menu>
+                    <Menu>Peter</Menu>
                     <Geometry>
                         <Size>
                             <Height>320</Height>
@@ -46,8 +46,8 @@
                         </MinSize>
                     </Geometry>
                     <Icons>
-                        <Icon Type="Normal">./light.png</Icon>
-                        <Icon Type="DarkNormal">./dark.png</Icon>
+                        <Icon Type="Normal">./peter_panel.png</Icon>
+                        <Icon Type="DarkNormal">./peter_panel.png</Icon>
                     </Icons>
                 </UI>
             </DispatchInfo>

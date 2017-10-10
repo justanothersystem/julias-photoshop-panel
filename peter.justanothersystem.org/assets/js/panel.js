@@ -34,7 +34,7 @@ function list () {
 
       if (data.Contents.length > 0) {
         const key = data.Contents[0].Key
-        const url = `https://justanothersystem.imgix.net/${key}?w=2048`
+        const url = `https://justanothersystem.imgix.net/${key}?w=2048&fit=max&auto=compress`
         addImage(url, key)
         console.log('Image found!', key)
       } else {
