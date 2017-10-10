@@ -1,4 +1,5 @@
-0. Fix firefox progress bar preview.
-1. Add resume-able downloads after laptop sleep. Right now it cancels.
-2. Limit max image filesize to 1gb.
-3. Build customized SDK: https://sdk.amazonaws.com/builder/js/
+1. Fix deletion of images within the Photoshop Panel.
+2. Fix firefox progress bar preview.
+3. Add resume-able downloads after laptop sleep. Right now it cancels.
+4. Limit max image filesize to 1gb.
+5. Build customized SDK: https://sdk.amazonaws.com/builder/js/
