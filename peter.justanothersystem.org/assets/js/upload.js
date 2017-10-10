@@ -33,7 +33,12 @@ fileInput.onchange = () => {
   progressPattern = undefined
 
   // Make progress pattern
-  window.createImageBitmap(file).then(makeProgressPattern)
+  if (window.createImageBitmap) {
+    window.createImageBitmap(file).then(makeProgressPattern)
+  } else {
+    can.width = window.innerWidth
+    can.height = window.innerHeight
+  }
 
   // Start upload
   const fileName = file.name
@@ -98,6 +103,9 @@ function progressClear (color) {
 function progressRender (p) {
   if (progressPattern) {
     ctx.fillStyle = progressPattern
+    ctx.fillRect(0, Math.round((1.0 - p) * can.height), can.width, can.height)
+  } else {
+    ctx.fillStyle = 'rgb(170, 156, 156)'
     ctx.fillRect(0, Math.round((1.0 - p) * can.height), can.width, can.height)
   }
 }
