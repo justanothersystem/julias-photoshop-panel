@@ -1,4 +1,5 @@
 1. Fix deletion of images within the Photoshop Panel.
+1.5 - As soon as you refocus on the Panel, it checks the server.
 2. Fix firefox progress bar preview.
 3. Add resume-able downloads after laptop sleep. Right now it cancels.
 4. Limit max image filesize to 1gb.

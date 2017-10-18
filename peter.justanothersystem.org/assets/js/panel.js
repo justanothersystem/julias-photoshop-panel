@@ -41,7 +41,7 @@ function list () {
         console.log('No images found :(')
         listTimeout = setTimeout(() => {
           list()
-        }, 10000)
+        }, 5000)
       }
     }
   })
@@ -77,16 +77,20 @@ function addImage (url, key) {
   img.id = 'image'
   img.dataset.key = key
   document.body.appendChild(img)
-  window.onkeydown = function (e) {
+  window.addEventListener('keydown', (e) => {
     if (e.key === 'Delete' || e.key === 'Backspace') { removeImage(img) }
-  }
+  });
 }
+
+window.addEventListener('keydown', (e) => {
+  if(e.key === ' ') { list() }
+});
 
 window.onfocus = function (e) {
   document.body.classList.remove('inactive')
+  list()
 }
 
 window.onblur = function (e) {
   document.body.classList.add('inactive')
 }
-
